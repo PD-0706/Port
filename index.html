@@ -6,7 +6,7 @@
 <title>Prince Dutta | Portfolio</title>
 
 <style>
-/* ===== GLOBAL STYLES ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* ===== NAVBAR ===== */
 nav {
     position: fixed;
     width: 100%;
@@ -68,7 +67,6 @@ nav {
     box-shadow: 0 0 15px #6a5acd;
 }
 
-/* ===== SECTION BASE ===== */
 section {
     min-height: 100vh;
     padding: 120px 80px 60px 80px;
@@ -87,7 +85,6 @@ section {
     box-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
 }
 
-/* ===== HOME SECTION ===== */
 .home-content {
     display: flex;
     justify-content: space-between;
@@ -112,7 +109,6 @@ section {
     box-shadow: 0 0 25px #6a5acd;
 }
 
-/* ===== SKILLS ===== */
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -134,13 +130,11 @@ section {
     box-shadow: 0 0 25px #b388ff;
 }
 
-/* ===== CONTACT ===== */
 .contact-info p {
     margin: 10px 0;
     font-size: 18px;
 }
 
-/* ===== RESPONSIVE ===== */
 @media(max-width: 900px){
     .home-content {
         flex-direction: column;
@@ -152,10 +146,9 @@ section {
 
 <body>
 
-<!-- ===== NAVBAR ===== -->
+
 <nav>
     <div class="logo-section">
-        <!-- Replace logo.png with your custom logo -->
         <img src="logo.png" alt="Logo">
         <h2>Prince</h2>
     </div>
@@ -167,24 +160,19 @@ section {
         <a href="#contact">Contacts</a>
     </div>
 </nav>
-
-<!-- ===== HOME ===== -->
 <section id="home">
     <div class="section-box">
         <div class="home-content">
             <div class="home-text">
                 <h1>Hello there, I am <br> <span style="color:#b388ff;">Prince Dutta</span></h1>
-                <p id="changing-text">Web Developer</p>
+                <p >Web Developer</p>
             </div>
             <div class="home-image">
-                <!-- Replace with your own picture -->
                 <img src="your-image.jpg" alt="Prince Dutta">
             </div>
         </div>
     </div>
 </section>
-
-<!-- ===== ABOUT ===== -->
 <section id="about">
     <div class="section-box">
         <h1>About Me</h1>
@@ -196,8 +184,6 @@ section {
         </p>
     </div>
 </section>
-
-<!-- ===== SKILLS ===== -->
 <section id="skills">
     <div class="section-box">
         <h1>My Skills</h1>
@@ -212,8 +198,6 @@ section {
         </div>
     </div>
 </section>
-
-<!-- ===== CONTACT ===== -->
 <section id="contact">
     <div class="section-box">
         <h1>Contact Me</h1>
@@ -225,24 +209,7 @@ section {
     </div>
 </section>
 
-<!-- ===== JAVASCRIPT ===== -->
-<script>
-const texts = [
-    "Web Developer",
-    "Creative Designer",
-    "Frontend Enthusiast",
-    "Problem Solver",
-    "Tech Explorer"
-];
-
-let index = 0;
-const changingText = document.getElementById("changing-text");
-
-setInterval(() => {
-    index = (index + 1) % texts.length;
-    changingText.textContent = texts[index];
-}, 2500);
-</script>
 
 </body>
 </html>
+
